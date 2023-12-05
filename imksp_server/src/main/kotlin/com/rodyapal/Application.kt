@@ -7,9 +7,9 @@ fun main(args: Array<String>) {
 	io.ktor.server.netty.EngineMain.main(args)
 }
 
+@Suppress("Unused")
 fun Application.module() {
 	configureMonitoring()
 	configureSerialization()
-	configureDatabases()
 	configureRouting()
 }
